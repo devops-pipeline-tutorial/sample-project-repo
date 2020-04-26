@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
-                sh 'mvn install' 
+                sh 'mvn -DskipTests install' 
                 archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
             }
         }
