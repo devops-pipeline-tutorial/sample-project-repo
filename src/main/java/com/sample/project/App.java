@@ -16,7 +16,7 @@ public class App
     }
 
     public static String getWorldString(){
-        return "Worl";
+        return "World";
     }
 
 }
